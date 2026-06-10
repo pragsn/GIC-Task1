@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef4f8;
+  color: #1f2937;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-icon {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.edit-action {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.edit-action:hover {
+  transform: translateY(-2px);
+  background: #dbeafe;
+}
+
+.delete-action {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.delete-action:hover {
+  transform: translateY(-2px);
+  background: #fee2e2;
+}
+.navbar {
+  background: #0f766e;
+  color: white;
+  padding: 18px 0;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-section {
+  padding: 30px 0;
+}
+
+.intro-card,
+.form-card,
+.table-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.intro-card h1 {
+  margin-bottom: 8px;
+  color: #0f766e;
+}
+
+.intro-card p {
+  margin: 0;
+  color: #64748b;
+}
+
+.form-card h3,
+.table-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #134e4a;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0f766e;
+}
+
+.button-row {
+  margin-top: 22px;
+}
+
+.primary-btn,
+.secondary-btn,
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #0f766e;
+  color: white;
+  padding: 11px 20px;
+}
+
+.secondary-btn {
+  background: #64748b;
+  color: white;
+  padding: 11px 20px;
+  margin-left: 10px;
+}
+
+.search-box {
+  margin-bottom: 24px;
+}
+
+.search-box input {
+  background: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+thead {
+  background: #134e4a;
+  color: white;
+}
+
+th,
+td {
+  padding: 18px 14px;
+  vertical-align: top;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.remarks {
+  max-width: 280px;
+  line-height: 1.4;
+}
+.remarks-pill {
+  display: block;
+  min-width: 280px;
+  max-width: 400px;
+  line-height: 1.5;
+  color: #065f46;
+  font-weight: 500;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  padding: 7px 12px;
+  margin-right: 8px;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  padding: 7px 12px;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #64748b;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-card h1 {
+    font-size: 24px;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+  }
+}

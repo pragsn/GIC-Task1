@@ -1,0 +1,4 @@
+venv/
+.env
+patients.db
+__pycache__/
