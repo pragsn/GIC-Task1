@@ -33,7 +33,9 @@ function PatientForm({ onSubmit, selectedPatient, clearSelected }) {
       return false;
     }
 
-    if (!formData.email.includes("@")) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
       alert("Please enter a valid email address.");
       return false;
     }
